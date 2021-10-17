@@ -1,11 +1,21 @@
 import React from 'react';
-import './App.css';
+import { Header } from './components/Header';
+import 'boxicons';
+import { BrowserRouter as Router } from "react-router-dom";
+import { Pages } from "./components/Pages";
+import { DataProvider } from "./context/Dataprovider";
 
 function App() {
   return (
+    <DataProvider>
     <div className="App">
-      <h1>Hola mundo</h1>
+      <Router>
+      <Header />
+
+      <Pages />
+      </Router>
     </div>
+    </DataProvider>
   );
 }
 
