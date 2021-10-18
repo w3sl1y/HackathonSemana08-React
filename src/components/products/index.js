@@ -12,7 +12,7 @@ export const ProductsList = () => {
     return (
       <>
         <h1 className="title">PRODUCTS</h1>
-        <div className="productos">
+        <div className="products">
             {
                 products.map(product =>(
                     <ProductItem 
